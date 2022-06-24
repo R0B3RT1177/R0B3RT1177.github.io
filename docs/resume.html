@@ -164,6 +164,14 @@
          left: 30px;
        }
      
+      @media screen {
+      
+        .bottom {
+          margin-bottom: 150px;
+        } <!--When something has class = "bottom" it will add a big space under it, except for when you print it-->
+
+      } 
+      
       @media print {
       
          .noprint {
@@ -282,15 +290,9 @@
 
     <orange><p style = "margin-bottom: -15px">Other</p></orange>
      <ul>
-      <li><p>None</p>
+      <li><p class = "bottom">None</p>
      </ul>
-
-<!--The below commands add space at the bottom so the website doesn't look crammed-->
-
-    <p class = "noprint">&nbsp;</p>
-    <p class = "noprint">&nbsp;</p>
-    <p class = "noprint">&nbsp;</p>
-
+        
     </div>
 
     </td>
