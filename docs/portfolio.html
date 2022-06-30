@@ -1,8 +1,59 @@
 <html>
   <head>
         
+    <link rel="icon" href="Rainbow%20Spiral.gif" >
+
+<!--The above code adds the favicon, to add your own copy the image link of a .ico image that you want to put as the favicon and paste it into the quotations after href =-->
+
+<!--<p style = "margin-bottom:-#px"> removes space that 
+    automatically gets created with the <ul> and <p> commands-->
+
     <style>
-      
+
+      body {
+        background-image: url("Gray%20Background.jpg");
+      }
+
+      h1 {
+        height: 15%;
+      }
+
+      ul { 
+        color: white;
+      }
+
+      tfont {
+        font-family: 'Times New Roman', serif;
+      }
+
+      s0 {
+        font-size: 30px;
+      }
+
+      s1 {
+        font-size: 20px;
+        font-weight: none;
+      }
+
+      s2 {
+        font-size: 19px;
+      }
+
+      green {
+        color: #05ff48;
+      }
+
+      orange {
+        color: orange;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      ten {
+        margin-left: 15px;
+        color: white;
+      }
+
       a:link {
         color: #01BBFE;
         background-color: transparent;
@@ -26,15 +77,27 @@
         background-color: transparent;
         text-decoration: underline;
       }
-      
-      table {
+
+      img {
+        border-radius: 40%;
+        position: absolute;
+        right:50px ;
+        top: 50px;
+        margin
+       }
+
+       table {
         width: 750px; <!--You can change the transparent to a color to make getting all of the positioning and size right easier-->
         position: absolute;
         margin-left: auto;
         margin-right: auto;
        }
-      
-      /* Center the loader */
+
+       .indent {
+         margin-left: 20px;
+       }
+
+/* Center the loader */
        #loader {
          position: absolute;
          left: 50%;
@@ -86,13 +149,25 @@
          display: none;
          margin-left: 10px;
        }
-      
+
+       PrintButton {
+         top: 50px;
+         left: 30px;
+       }
+     
+      @media screen {
+        .bottom {
+          margin-bottom: 150px;
+        }
+
+      } 
+
       @media print {
       
         .noprint {
           visibility: hidden;
         } <!--When something has class = "noprint" it disappears when you print the resume-->
-
+        
         a:link {
           color: #000000;
           background-color: transparent;
@@ -116,30 +191,68 @@
           background-color: transparent;
           text-decoration: underline;
         }
-        
-        table {
-          color: black;
+
+        green {
+          color: #000000;
         }
-     
+
+        orange {
+          color: #000000;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        ten {
+          margin-left: 15px;
+          color: #000000;
+        }
+        
       }
-      
-      </style>
+
+    </style>
+
+    <title>Kenji Ogawa - Portfolio</title>
+    
     </head>
     <body>
+
+    <body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
       <table>
         <tr>
+
+          <p style = "margin-top: 70px"><center><s0><tfont><green>Kenji Ogawa</green></tfont></rspace1></p></s0></center>
+          <center><p style = "margin-top: -35px"><s1><tfont><a href = "mailto:kenji.ogawa@kyotoiu.ac.jp" target = ”_blank”>kenji.ogawa@kyotoiu.ac.jp</a></tfont></s1></h2></center></p>
+
+          <p>&nbsp;</p> <!--This adds an empty space below the name and email-->
+
           <td>
-            <ul style = "">
+            <ul>
               <li>Scratch Projects:
-                <a href = "https://scratch.mit.edu/projects/535438035" target = ”_blank”>Rat Mania Mini Project</a>
-                <a href = "https://scratch.mit.edu/projects/547427855" target = ”_blank”>Space Dodgers</a>
+                <br><a href = "https://scratch.mit.edu/projects/535438035" target = ”_blank”>Rat Mania Mini Project</a>
+                <br><a href = "https://scratch.mit.edu/projects/547427855" target = ”_blank”>Space Dodgers</a>
+     
+
+    <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
      </body>
 </html>
         
             
-              
-        
-      
-      
-       
-       
+ 
