@@ -62,6 +62,16 @@
         color: white;
       }
 
+      .button0 {
+	color: #01BBFE;
+	font-weight: bold;
+	background-color:
+	cursor: pointer;
+	top: 10%;
+	right: 300px;
+	background-color: grey;
+      }
+
       a:link {
         color: #01BBFE;
         background-color: transparent;
@@ -163,6 +173,11 @@
          top: 50px;
          left: 30px;
        }
+
+       PortfolioButton {
+	 top: 40px;
+	 left: 30px;
+       }
      
       @media screen {
         .bottom {
@@ -173,7 +188,7 @@
 
       @media print {
       
-        .noprint {
+        .noprint, .button0 {
           visibility: hidden;
         } <!--When something has class = "noprint" it disappears when you print the resume-->
         
@@ -242,7 +257,9 @@
 
 <!--The above command, with the help of the css command that defines <img> (you can find the command within the <style></style> since it's css), makes the oval shaped picture appear. I also added a little surprise link to the image.-->
 
-    <PrintButton><input type = "button" value = "Print This Resume" class = "noprint" style = "margin-top: 30px;" onclick = "window.print()"/></PrintButton>
+    <PrintButton><input type = "button" value = "Print This Resume" class = "button0" style = "margin-top: 30px;" onclick = "window.print()"/></PrintButton>
+
+    <PrintButton><a href = "r0b3rt1177.gituhub.io/docs/portfolio.html"><button class = "button0" style = "margin-top: 40px;">My Portfolio</button></a></PrintButton>
 
     <p style = "margin-top: 10px"><center><s0><tfont><green>Kenji Ogawa</green></tfont></rspace1></p></s0></center>
     <center><p style = "margin-top: -35px"><s1><tfont><a href = "mailto:kenji.ogawa@kyotoiu.ac.jp" target = ”_blank”>kenji.ogawa@kyotoiu.ac.jp</a></tfont></s1></h2></center></p>
