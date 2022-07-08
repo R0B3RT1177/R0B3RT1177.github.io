@@ -105,10 +105,13 @@
        }
 
        table {
-        width: 750px; /*You can change the transparent to a color to make getting all of the positioning and size right easier*/
+        width: 750px; <!--You can change the transparent to a color to make getting all of the positioning and size right easier-->
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
+       }
+
+       .center { /* if something has a class = "center" it will be centered */
+         margin-left: auto;
+         margin-right: auto;
        }
 
        .indent {
@@ -246,7 +249,7 @@
 
     <div style="display:none;" id="myDiv" class="animate-bottom">
 
-   <table>
+   <table class = "center">
 
     <tr>
 
@@ -256,9 +259,9 @@
 
 <!--The above command, with the help of the css command that defines <img> (you can find the command within the <style></style> since it's css), makes the oval shaped picture appear. I also added a little surprise link to the image.-->
 
-    <PrintButton><input type = "button" value = "Print" class = "button0" style = "margin-top: 30px;" onclick = "window.print()"/></PrintButton>
+    <PrintButton><input type = "button" value = "Print This Resume" class = "button0" style = "margin-top: 30px;" onclick = "window.print()"/></PrintButton>
 
-    <PrintButton><a href = "portfolio.html"><button class = "button0" style = "margin-top: 40px;">Portfolio</button></a></PrintButton>
+    <PrintButton><a href = "r0b3rt1177.gituhub.io/docs/portfolio.html"><button class = "button0" style = "margin-top: 40px;">My Portfolio</button></a></PrintButton>
 
     <p style = "margin-top: 10px"><center><s0><tfont><green>Kenji Ogawa</green></tfont></rspace1></p></s0></center>
     <center><p style = "margin-top: -35px"><s1><tfont><a href = "mailto:kenji.ogawa@kyotoiu.ac.jp" target = ”_blank”>kenji.ogawa@kyotoiu.ac.jp</a></tfont></s1></h2></center></p>
@@ -301,7 +304,7 @@
 
     <orange><p style = "margin-bottom: -5px">Technical Experience</p></orange>
 
-    <table style = "color: white;" class = "indent">
+    <table style = "color: white;" class = "indent center">
     <tr>
 
       <td valign = "top"><li>Google
